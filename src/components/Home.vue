@@ -15,6 +15,8 @@
           </v-col>
           <v-col
             class="d-flex flex-column justify-space-between"
+            cols="12"
+            sm="8"
           >
             <p>
               I am a junior software developer currently working with the USGS
@@ -48,6 +50,9 @@
             class="d-flex flex-column justify-start"
             v-for="item in university.degrees"
             :key="item.degree + item.degreeType"
+            cols="12"
+            sm=6
+            md=4
           >
             <h4>{{ item.name }}</h4>
             <a :href="item.degreeLink">{{ item.degreeType }} in {{ item.degree }}</a>
