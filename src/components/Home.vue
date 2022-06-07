@@ -30,7 +30,7 @@
             <div>
               
               <a href="mailto:EthanGrahn@outlook.com"><font-awesome-icon icon="envelope" style="margin-right: 8px"/>EthanGrahn@outlook.com</a>              
-              <div><font-awesome-icon icon="map-marker-alt"  style="margin-right: 8px"/>Iowa</div>
+              <div><font-awesome-icon icon="map-marker-alt"  style="margin-right: 8px"/>Maryland</div>
             </div>
           </v-col>
         </v-row>
@@ -55,8 +55,11 @@
             md=4
           >
             <h4>{{ item.name }}</h4>
-            <a :href="item.degreeLink">{{ item.degreeType }} in {{ item.degree }}</a>
-            <a v-if="item.minor != null" :href="item.minorLink">Minor in {{ item.minor }}</a>
+            <a :href="item.degreeLink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >{{ item.degreeType }} in {{ item.degree }}</a>
+            <a v-if="item.minor != null" :href="item.minorLink" target="_blank" rel="noopener noreferrer">Minor in {{ item.minor }}</a>
             <div>GPA: {{ item.gpa }}</div>
           </v-col>
           </v-row>
