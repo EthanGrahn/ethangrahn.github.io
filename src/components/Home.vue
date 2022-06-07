@@ -19,13 +19,13 @@
             sm="8"
           >
             <p>
-              I am a junior software developer currently working with the USGS
-              Water Mission Area. My work is focused around creating and
-              modifying web based services to supplement the Water Mission
+              I am a Computer Scientist currently working with the USGS
+              Water Mission Area as a DevOps Engineer and Application Developer.
+              My work is focused around creating cloud based services to supplement the Water Mission
               Area's scientific efforts. I have experience developing
               infrastructure as code for Amazon Web Services, continuous
-              integration pipelines within GitLab, and "containerizing"
-              applications to run via Docker.
+              integration pipelines within GitLab and GitHub, and building our applications
+              as Docker images.
             </p>
             <div>
               
