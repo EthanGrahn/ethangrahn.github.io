@@ -29,7 +29,7 @@
             </p>
             <div>
               
-              <a href="mailto:EthanGrahn@outlook.com"><font-awesome-icon icon="envelope" style="margin-right: 8px"/>EthanGrahn@outlook.com</a>              
+              <a href="mailto:ekgrahn.resume@outlook.com"><font-awesome-icon icon="envelope" style="margin-right: 8px"/>ekgrahn.resume@outlook.com</a>              
               <div><font-awesome-icon icon="map-marker-alt"  style="margin-right: 8px"/>Maryland</div>
             </div>
           </v-col>
