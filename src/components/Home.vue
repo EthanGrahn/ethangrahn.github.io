@@ -37,6 +37,20 @@
       </v-card-text>
     </v-card>
     <v-card style="padding: 12px; margin-bottom: 25px">
+      <v-card-title class="text-h3">Work Experience</v-card-title>
+      <v-divider style="margin: 4px"> </v-divider>
+      <v-card-text>
+          <h2>USGS Water Mission Area</h2>
+          <h3>Computer Scientist</h3>
+          <ul>
+            <li>Developed REST API applications</li>
+            <li>Implemented CI/CD pipelines</li>
+            <li>Build cloud microservices in AWS</li>
+            <li>Maintained infrastructure as code</li>
+          </ul>
+      </v-card-text>
+    </v-card>
+    <v-card style="padding: 12px; margin-bottom: 25px">
       <v-card-title class="text-h3">Education</v-card-title>
       <v-divider style="margin: 4px"> </v-divider>
       <v-card-text>
