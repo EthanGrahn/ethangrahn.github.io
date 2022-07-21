@@ -14,7 +14,7 @@
                 rel="noopener noreferrer"
                 >USGS Water Mission Area</a
               >
-              as a DevOps Engineer and Application Developer. My work is focused
+              as a Lead Enterprise Software Developer. My work is focused
               around creating cloud based services to supplement the Water
               Mission Area's scientific efforts. I have experience developing
               infrastructure as code for Amazon Web Services, continuous
@@ -111,7 +111,7 @@
         <v-col class="d-flex flex-column justify-start" cols="auto">
           <v-card-text>
             <h2>USGS Water Mission Area</h2>
-            <h3>DevOps &amp; Application Engineer</h3>
+            <h3>Lead Enterprise Software Developer</h3>
             <ul>
               <li>Modernized legacy applications to run in Docker containers</li>
               <li>Created CI/CD pipelines in GitLab and GitHub</li>
