@@ -173,6 +173,17 @@
           </a>
         </h3>
       </v-card-text>
+      <v-card-text>
+        <h3>
+          USGS Special Thanks and Recognition (STAR) Award
+          <a
+            href="https://www.usgs.gov/human-capital/awards"
+            title="USGS awards webpage"
+          >
+            <font-awesome-icon icon="info-circle" />
+          </a>
+        </h3>
+      </v-card-text>
     </v-card>
   </v-container>
 </template>
