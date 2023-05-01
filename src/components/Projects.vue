@@ -68,6 +68,8 @@
         />
       </v-card-title>
       <v-card-text>
+        <ul>
+          <li>
             <a
               href="https://github.com/MrChuckomo/poddycast"
               target="_blank"
@@ -75,6 +77,8 @@
             >
               Poddycast
             </a>
+          </li>
+        </ul>
       </v-card-text>
     </v-card>
     <v-card style="padding: 12px; margin-bottom: 25px">
