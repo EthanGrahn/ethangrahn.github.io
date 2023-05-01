@@ -7,19 +7,16 @@
           <v-divider style="margin: 4px"> </v-divider>
           <v-card-text>
             <p>
-              I am a Computer Scientist currently working with the
+              I am a Build Engineer currently working with
               <a
-                href="https://www.usgs.gov/mission-areas/water-resources"
+                href="https://deckninegames.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                >USGS Water Mission Area</a
-              >
-              as a Lead Enterprise Software Developer. My work is focused
-              around creating cloud based services to supplement the Water
-              Mission Area's scientific efforts. I have experience developing
-              infrastructure as code for Amazon Web Services, continuous
-              integration pipelines within GitLab and GitHub, and building our
-              applications as Docker images.
+                >Deck Nine Games</a
+              >. My work is focused around expanding and maintaining build automation systems.
+              I have experience developing infrastructure as code for Amazon Web Services, continuous
+              integration pipelines within GitLab and GitHub, constructing Docker images, maintaining
+              remote systems, and other related skills.
             </p>
             <div>
               <a href="mailto:ekgrahn.resume@outlook.com"
@@ -32,7 +29,7 @@
                 <font-awesome-icon
                   icon="map-marker-alt"
                   style="margin-right: 8px"
-                />Maryland
+                />Minnesota (Remote)
               </div>
             </div>
           </v-card-text>
@@ -110,6 +107,17 @@
       <v-row>
         <v-col class="d-flex flex-column justify-start" cols="auto">
           <v-card-text>
+            <h2>Deck Nine Games</h2>
+            <h3>Build Engineer</h3>
+            <ul>
+              <li>Managed Jenkins automation platform</li>
+              <li>Constructed pipelines to fit project feature requests</li>
+              <li>Utilized Perforce for pipelines, code review, and contributions</li>
+            </ul>
+          </v-card-text>
+        </v-col>
+        <v-col class="d-flex flex-column justify-start" cols="auto">
+          <v-card-text>
             <h2>USGS Water Mission Area</h2>
             <h3>Lead Enterprise Software Developer</h3>
             <ul>
@@ -155,7 +163,7 @@
         <v-card style="padding: 12px; margin-bottom: 25px">
           <v-card-title class="text-h4">Technologies</v-card-title>
           <v-divider style="margin: 4px"></v-divider>
-          <v-card-text> Docker - AWS CDK - Spring Framework - PostgreSQL</v-card-text>
+          <v-card-text> Docker - AWS CDK - Spring Framework - PostgreSQL - Jenkins - Git - Perforce</v-card-text>
         </v-card>
       </v-col>
     </v-row>
