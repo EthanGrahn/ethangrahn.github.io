@@ -54,75 +54,30 @@
       <v-col>
         <v-card class="card-spacing">
           <v-card-title class="card-title-h2">
-            Education - Dakota State University
+            Education
           </v-card-title>
           <v-divider class="divider-tight" />
           <v-card-text>
-            <v-row>
-              <v-col
-                class="d-flex flex-column justify-start education-col"
-                cols="12"
-                sm="6"
-                md="4"
-              >
-                <h4>Masters</h4>
-                <a
-                  href="https://dsu.edu/programs/mscs/index.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >Computer Science</a>
-              </v-col>
-              <v-col
-                class="d-flex flex-column justify-start education-col"
-                cols="12"
-                sm="6"
-                md="4"
-              >
-                <h4>Bachelors</h4>
-                <a
-                  href="https://dsu.edu/programs/computer-science-bs.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >Computer Science</a>
-                <a
-                  href="https://dsu.edu/programs/computer-game-design-bs.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >Computer Game Design</a>
-              </v-col>
-              <v-col
-                class="d-flex flex-column justify-start education-col"
-                cols="12"
-                sm="6"
-                md="4"
-              >
-                <h4>Minor</h4>
-                <a
-                  href="https://dsu.edu/programs/mathematics-applied-minor.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >Applied Mathematics</a>
-                <a
-                  href="https://dsu.edu/programs/computer-graphics-minor.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >Computer Graphics</a>
-              </v-col>
-            </v-row>
+            <h3 class="education-university">Dakota State University</h3>
+            <div class="chips-container education-chips">
+              <v-chip href="https://dsu.edu/programs/mscs/index.html" target="_blank" rel="noopener noreferrer" small class="chip">MS, Computer Science</v-chip>
+              <v-chip href="https://dsu.edu/programs/computer-science-bs.html" target="_blank" rel="noopener noreferrer" small class="chip">BS, Computer Science</v-chip>
+              <v-chip href="https://dsu.edu/programs/computer-game-design-bs.html" target="_blank" rel="noopener noreferrer" small class="chip">BS, Computer Game Design</v-chip>
+              <v-chip href="https://dsu.edu/programs/mathematics-applied-minor.html" target="_blank" rel="noopener noreferrer" small class="chip">Minor, Applied Mathematics</v-chip>
+              <v-chip href="https://dsu.edu/programs/computer-graphics-minor.html" target="_blank" rel="noopener noreferrer" small class="chip">Minor, Computer Graphics</v-chip>
+            </div>
           </v-card-text>
         </v-card>
       </v-col>
     </v-row>
+
     <v-card class="card-spacing">
       <v-card-title class="card-title-h2">
         Work Experience
       </v-card-title>
       <v-divider class="divider-tight" />
       <v-row class="work-row">
-        <v-col
-          class="d-flex flex-column justify-start work-col"
-          cols="auto"
-        >
+        <v-col class="d-flex flex-column justify-start work-col" cols="auto">
           <v-card-text>
             <h2>Spliced Inc.</h2>
             <h3><i>Build Engineer</i></h3>
@@ -135,10 +90,8 @@
             </ul>
           </v-card-text>
         </v-col>
-        <v-col
-          class="d-flex flex-column justify-start work-col"
-          cols="auto"
-        >
+
+        <v-col class="d-flex flex-column justify-start work-col" cols="auto">
           <v-card-text>
             <h2>Deck Nine Games</h2>
             <h3><i>Build Engineer</i></h3>
@@ -150,10 +103,8 @@
             </ul>
           </v-card-text>
         </v-col>
-        <v-col
-          class="d-flex flex-column justify-start work-col"
-          cols="auto"
-        >
+
+        <v-col class="d-flex flex-column justify-start work-col" cols="auto">
           <v-card-text>
             <h2>USGS Water Mission Area</h2>
             <h3><i>Enterprise Software Developer</i></h3>
@@ -164,10 +115,8 @@
             </ul>
           </v-card-text>
         </v-col>
-        <v-col
-          class="d-flex flex-column justify-start work-col"
-          cols="auto"
-        >
+
+        <v-col class="d-flex flex-column justify-start work-col" cols="auto">
           <v-card-text>
             <h2>Oak Ridge National Laboratory</h2>
             <h3><i>Programming Intern</i></h3>
@@ -177,10 +126,8 @@
             </ul>
           </v-card-text>
         </v-col>
-        <v-col
-          class="d-flex flex-column justify-start work-col"
-          cols="auto"
-        >
+
+        <v-col class="d-flex flex-column justify-start work-col" cols="auto">
           <v-card-text>
             <h2>Self-Employed</h2>
             <h3><i>Freelance Programming &amp; Game Design</i></h3>
@@ -192,6 +139,7 @@
         </v-col>
       </v-row>
     </v-card>
+
     <v-row>
       <v-col>
         <v-card class="card-spacing">
@@ -234,6 +182,7 @@
         </v-card>
       </v-col>
     </v-row>
+
     <v-card class="card-spacing accomplishments-card">
       <v-card-title class="card-title-h2">
         Accomplishments
@@ -293,8 +242,9 @@ export default {
   line-height: 1.2 !important;
   margin: 0 0 0.5rem 0 !important;
 }
+.education-university { margin: 0 0 0.5rem 0; font-size: 1.05rem; font-weight: 500; }
 .education-row { row-gap: 6px; column-gap: 12px; }
-.education-col h4 { margin: 0 0 0.2rem 0; font-size: 1rem; }
+.education-col h4 { margin: 0 0 0.2rem 0; font-size: 1rem; font-style: italic; }
 .education-col a { display: block; margin-bottom: 0.25rem; }
 .work-row { row-gap: 6px; column-gap: 12px; }
 .work-col h2 { margin: 0 0 0.2rem 0; font-size: 1.05rem; }
@@ -302,7 +252,53 @@ export default {
 .work-col ul { margin: 0; padding-left: 1.15rem; }
 .work-col li { margin-bottom: 0.25rem; }
 .chips-container { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-.chip { margin: 0; background-color: #1976D2 !important; color: #ffffff }
+.chip {
+  margin: 0;
+  background-color: #1976D2 !important;
+  color: #ffffff;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 28px;
+  height: 28px;
+  line-height: normal;
+  padding: 0 10px;
+}
+
+/* ensure chip internals and anchors center vertically */
+.chip, .chip .v-chip__content, .chip a, .chip a span {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100%;
+}
+
+/* ensure Font Awesome SVGs inside chips align */
+.chip svg, .chip .svg-inline--fa {
+  display: inline-flex;
+  align-self: center;
+  vertical-align: middle;
+}
+
+/* smaller, single-line chips for the education column */
+.education-col .chip {
+  min-height: 24px;
+  height: 24px;
+  padding: 0 8px;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* chips container when flattened into one row */
+.education-chips .chip {
+  min-height: 24px;
+  height: 24px;
+  padding: 0 8px;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
 .contact-list { display: flex; flex-direction: column; gap: 6px; margin-top: 0.5rem; }
 .contact-row { display: flex; align-items: center; }
 .contact-row a { display: flex; align-items: center; gap: 8px; }
