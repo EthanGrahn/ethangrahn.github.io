@@ -68,7 +68,7 @@
         <Home />
       </div>
       <div v-else-if="tab === 'projects'">
-        <Projects />
+        <Projects :is-mobile="isMobile" />
       </div>
     </v-main>
 
@@ -116,6 +116,7 @@
       <Projects
         v-if="tab == 'projects'"
         :key="tab"
+        :is-mobile="isMobile"
       />
     </v-main>
   </v-app>
