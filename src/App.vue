@@ -31,6 +31,24 @@
         >
           Projects
         </button>
+        <button
+          class="nav-button"
+          @click="openLinkedIn"
+        >
+          LinkedIn<font-awesome-icon
+            :icon="['fab','linkedin']"
+            class="icon-gap"
+          />
+        </button>
+        <button
+          class="nav-button"
+          @click="openGitHub"
+        >
+          GitHub<font-awesome-icon
+            :icon="['fab','github']"
+            class="icon-gap"
+          />
+        </button>
       </div>
 
       <v-spacer />
@@ -71,6 +89,24 @@
         >
           Projects
         </button>
+        <button
+          class="drawer-button"
+          @click="(drawer = false, openLinkedIn())"
+        >
+          LinkedIn<font-awesome-icon
+            :icon="['fab','linkedin']"
+            class="icon-gap"
+          />
+        </button>
+        <button
+          class="drawer-button"
+          @click="(drawer = false, openGitHub())"
+        >
+          GitHub<font-awesome-icon
+            :icon="['fab','github']"
+            class="icon-gap"
+          />
+        </button>
       </div>
 
       <Home
@@ -89,6 +125,9 @@
 import { ref, watch, onMounted, onUnmounted } from 'vue'
 import Home from './components/Home.vue'
 import Projects from './components/Projects.vue'
+
+function openLinkedIn() { window.open('https://www.linkedin.com/in/ethangrahn/', '_blank', 'noopener') }
+function openGitHub() { window.open('https://github.com/EthanGrahn', '_blank', 'noopener') }
 
 const tab = ref('summary')
 const drawer = ref(false)
@@ -112,4 +151,5 @@ onUnmounted(() => window.removeEventListener('resize', onResize))
 .drawer-panel { position: fixed; top: 0; right: 0; height: 100vh; width: 280px; background: #fff; box-shadow: -2px 0 8px rgba(0,0,0,0.2); z-index: 9999; padding: 12px; }
 .drawer-button { display: block; width: 100%; background: #1976D2; color: white; border: none; padding: 10px; margin-bottom: 8px; text-align: left; border-radius: 4px; cursor: pointer; }
 .app-bar { padding: 0 20px; }
+.icon-gap { margin-left: 8px; }
 </style>
