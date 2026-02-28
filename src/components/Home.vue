@@ -19,17 +19,11 @@
               remote systems, and other related skills.
             </p>
             <div>
-              <a href="mailto:ekgrahn.resume@outlook.com"
-                ><font-awesome-icon
-                  icon="envelope"
-                  style="margin-right: 8px"
-                />ekgrahn.resume@outlook.com</a
-              >
+              <a href="mailto:ekgrahn.resume@outlook.com">
+                <font-awesome-icon :icon="['fas','envelope']" style="margin-right: 8px" />ekgrahn.resume@outlook.com
+              </a>
               <div>
-                <font-awesome-icon
-                  icon="map-marker-alt"
-                  style="margin-right: 8px"
-                />Minnesota (Remote)
+                <font-awesome-icon :icon="['fas','map-marker-alt']" style="margin-right: 8px" />Minnesota (Remote)
               </div>
             </div>
           </v-card-text>
@@ -173,22 +167,16 @@
       <v-card-text>
         <h3>
           CyberCorps Scholar (Scholarship for Service)
-          <a
-            href="https://www.sfs.opm.gov/"
-            title="Official Scholarship for Service website"
-          >
-            <font-awesome-icon icon="info-circle" />
-          </a>
+            <a href="https://www.sfs.opm.gov/" title="Official Scholarship for Service website">
+              <font-awesome-icon :icon="['fas','info-circle']" />
+            </a>
         </h3>
       </v-card-text>
       <v-card-text>
         <h3>
           USGS Special Thanks and Recognition (STAR) Award
-          <a
-            href="https://www.usgs.gov/human-capital/awards"
-            title="USGS awards webpage"
-          >
-            <font-awesome-icon icon="info-circle" />
+          <a href="https://www.usgs.gov/human-capital/awards" title="USGS awards webpage">
+            <font-awesome-icon :icon="['fas','info-circle']" />
           </a>
         </h3>
       </v-card-text>
@@ -198,7 +186,7 @@
 
 <script>
 export default {
-  name: "Home",
+  name: "HomeView",
 
   data: () => ({}),
 };

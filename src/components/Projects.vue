@@ -14,10 +14,7 @@
       <v-divider style="margin: 4px"> </v-divider>
       <v-card-title class="text-h6">
         Project Links
-        <font-awesome-icon
-          icon="fa-brands fa-github"
-          style="padding-left: 0.5em"
-        />
+        <font-awesome-icon :icon="['fab','github']" style="padding-left: 0.5em" />
       </v-card-title>
       <v-card-text>
         <ul>
@@ -62,10 +59,7 @@
       <v-divider style="margin: 4px"> </v-divider>
       <v-card-title class="text-h6">
         Project Link
-        <font-awesome-icon
-          icon="fa-brands fa-github"
-          style="padding-left: 0.5em"
-        />
+        <font-awesome-icon :icon="['fab','github']" style="padding-left: 0.5em" />
       </v-card-title>
       <v-card-text>
         <ul>
@@ -97,7 +91,7 @@
 
 <script>
 export default {
-  name: "Projects",
+  name: "ProjectsView",
 
   data: () => ({}),
 };

@@ -1,94 +1,59 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
+    <v-app-bar app color="primary">
       <div class="d-flex align-center">
-        <font-awesome-icon icon="file-code" size="2x" />
-
-        <h1 style="width: 6em; margin: auto 0.4em;">
-          Ethan Grahn
-        </h1>
+        <font-awesome-icon :icon="['fas','file-code']" size="2x" />
+        <h1 class="app-title">Ethan Grahn</h1>
       </div>
-      <v-tabs
-        v-if="!$vuetify.breakpoint.mobile"
-        v-model="tab"
-        show-arrows
-      >
-        <v-tab key="summary">Summary</v-tab>
-        <v-tab key="project">Projects</v-tab>
-      </v-tabs>
-      <v-spacer></v-spacer>
-      <v-app-bar-nav-icon 
-        v-if="$vuetify.breakpoint.mobile"
-        @click.stop="drawer = !drawer"
-      ></v-app-bar-nav-icon>
+
+      <div v-if="!isMobile" class="nav-buttons">
+        <button @click="tab = 'summary'" class="nav-button">Summary</button>
+        <button @click="tab = 'projects'" class="nav-button">Projects</button>
+      </div>
+
+      <v-spacer />
+
+      <button v-if="isMobile" @click.stop="drawer = !drawer" aria-label="menu" class="menu-button">☰</button>
     </v-app-bar>
 
-    <v-main v-if="!$vuetify.breakpoint.mobile">
-      <v-tabs-items v-model="tab">
-        <v-tab-item key="summary">
-          <Home/>
-        </v-tab-item>
-        <v-tab-item key="project">
-          <Projects/>
-        </v-tab-item>
-      </v-tabs-items>
+    <v-main v-if="!isMobile">
+      <div v-if="tab === 'summary'"><Home /></div>
+      <div v-else-if="tab === 'projects'"><Projects /></div>
     </v-main>
-    <v-main v-else>
-      <v-navigation-drawer
-        v-model="drawer"
-        absolute
-        right
-        floating
-        temporary
-      >      
-      <v-list
-        nav
-        dense
-      >
-        <v-list-item-group
-          v-model="tab"
-        >
-          <v-list-item value="summary">
-            <v-list-item-title>Summary</v-list-item-title>
-          </v-list-item>
 
-          <v-list-item value="projects">
-            <v-list-item-title>Projects</v-list-item-title>
-          </v-list-item>
-        </v-list-item-group>
-      </v-list>      
-      </v-navigation-drawer>
-          <Home
-            :key="tab"
-            v-if="tab == 'summary'"
-          />
-          <Projects
-            :key="tab"
-            v-if="tab == 'projects'"
-          />
+    <v-main v-else>
+      <div v-if="drawer" class="drawer-panel">
+        <button @click="(tab = 'summary', drawer = false)" class="drawer-button">Summary</button>
+        <button @click="(tab = 'projects', drawer = false)" class="drawer-button">Projects</button>
+      </div>
+
+      <Home :key="tab" v-if="tab == 'summary'" />
+      <Projects :key="tab" v-if="tab == 'projects'" />
     </v-main>
   </v-app>
 </template>
 
-<script>
-import Home from './components/Home';
-import Projects from './components/Projects';
+<script setup>
+import { ref, watch, onMounted, onUnmounted } from 'vue'
+import Home from './components/Home.vue'
+import Projects from './components/Projects.vue'
 
-export default {
-  name: 'App',
+const tab = ref('summary')
+const drawer = ref(false)
 
-  components: {
-    Home,
-    Projects
-  },
+const isMobile = ref(typeof window !== 'undefined' ? window.innerWidth <= 680 : false)
+function onResize() { isMobile.value = window.innerWidth <= 680 }
+onMounted(() => window.addEventListener('resize', onResize))
+onUnmounted(() => window.removeEventListener('resize', onResize))
 
-  data: () => ({
-    tab: 'summary',
-    drawer: false
-  })
-};
+// removed debug watcher
 </script>
+
+<style scoped>
+.app-title { width: 6em; margin: auto 0.4em; }
+.nav-buttons { display: flex; gap: 12px; align-items: center; }
+.nav-button { background: none; border: none; color: white; font-size: 16px; padding: 8px 12px; cursor: pointer; font-weight: 600; }
+.menu-button { background: none; border: none; color: white; font-size: 24px; cursor: pointer; }
+.drawer-panel { position: fixed; top: 0; right: 0; height: 100vh; width: 280px; background: #fff; box-shadow: -2px 0 8px rgba(0,0,0,0.2); z-index: 9999; padding: 12px; }
+.drawer-button { display: block; width: 100%; background: #1976D2; color: white; border: none; padding: 10px; margin-bottom: 8px; text-align: left; border-radius: 4px; cursor: pointer; }
+</style>
