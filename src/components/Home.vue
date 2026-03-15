@@ -134,6 +134,7 @@
             <ul>
               <li>Coordinated customer requests and orders via the Fiverr platform</li>
               <li>Provided technical design and programming for Unity projects</li>
+              <li>Obtained <a href="https://www.fiverr.com/ekg_max1mum">56 five star reviews</a></li>
             </ul>
           </v-card-text>
         </v-col>
