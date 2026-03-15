@@ -80,7 +80,7 @@
         <v-col class="d-flex flex-column justify-start work-col" cols="auto">
           <v-card-text>
             <h2>Spliced Inc.</h2>
-            <h3><i>Build Engineer</i></h3>
+            <h3><i>Build Engineer<span class="work-date">Jan 2025 - Mar 2026</span></i></h3>
             <ul>
               <li>Built and deployed Unreal Engine tooling for studio-wide use</li>
               <li>Managed Horde (Epic Games) and GitLab CI pipelines</li>
@@ -94,7 +94,7 @@
         <v-col class="d-flex flex-column justify-start work-col" cols="auto">
           <v-card-text>
             <h2>Deck Nine Games</h2>
-            <h3><i>Build Engineer</i></h3>
+            <h3><i>Build Engineer<span class="work-date">Dec 2022 - Dec 2024</span></i></h3>
             <ul>
               <li>Refactored, built, and maintained Jenkins pipelines</li>
               <li>Generated Unreal Engine game builds for XSX, PS5, and PC platforms</li>
@@ -107,7 +107,7 @@
         <v-col class="d-flex flex-column justify-start work-col" cols="auto">
           <v-card-text>
             <h2>USGS Water Mission Area</h2>
-            <h3><i>Enterprise Software Developer</i></h3>
+            <h3><i>Enterprise Software Developer<span class="work-date">Aug 2020 - Nov 2022</span></i></h3>
             <ul>
               <li>Containerized legacy applications for on-prem and cloud usage</li>
               <li>Created CI/CD pipelines in GitLab and GitHub</li>
@@ -119,7 +119,7 @@
         <v-col class="d-flex flex-column justify-start work-col" cols="auto">
           <v-card-text>
             <h2>Oak Ridge National Laboratory</h2>
-            <h3><i>Programming Intern</i></h3>
+            <h3><i>Programming Intern<span class="work-date">May 2017 - Aug 2017</span></i></h3>
             <ul>
               <li>Researched and implemented a medial axis algorithm using C++</li>
               <li>Created research paper and presentation based on findings</li>
@@ -130,7 +130,7 @@
         <v-col class="d-flex flex-column justify-start work-col" cols="auto">
           <v-card-text>
             <h2>Self-Employed</h2>
-            <h3><i>Freelance Programming &amp; Game Design</i></h3>
+            <h3><i>Freelance Programming &amp; Game Design<span class="work-date">Jun 2015 - Aug 2020</span></i></h3>
             <ul>
               <li>Coordinated customer requests and orders via the Fiverr platform</li>
               <li>Provided technical design and programming for Unity projects</li>
@@ -249,6 +249,15 @@ export default {
 .work-row { row-gap: 6px; column-gap: 12px; }
 .work-col h2 { margin: 0 0 0.2rem 0; font-size: 1.05rem; }
 .work-col h3 { margin: 0 0 0.35rem 0; font-size: 0.95rem; font-weight: 600; }
+.work-col h3 .work-date {
+  color: #6b7280;
+  font-size: 0.875rem !important;
+  font-weight: 400 !important;
+  font-style: italic !important;
+  display: inline !important;
+  line-height: 1.3 !important;
+  margin-left: 0.5rem;
+}
 .work-col ul { margin: 0; padding-left: 1.15rem; }
 .work-col li { margin-bottom: 0.25rem; }
 .chips-container { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
