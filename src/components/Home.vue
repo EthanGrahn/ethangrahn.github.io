@@ -58,13 +58,55 @@
           </v-card-title>
           <v-divider class="divider-tight" />
           <v-card-text>
-            <h3 class="education-university">Dakota State University</h3>
+            <h3 class="education-university">
+              Dakota State University
+            </h3>
             <div class="chips-container education-chips">
-              <v-chip href="https://dsu.edu/programs/mscs/index.html" target="_blank" rel="noopener noreferrer" small class="chip">MS, Computer Science</v-chip>
-              <v-chip href="https://dsu.edu/programs/computer-science-bs.html" target="_blank" rel="noopener noreferrer" small class="chip">BS, Computer Science</v-chip>
-              <v-chip href="https://dsu.edu/programs/computer-game-design-bs.html" target="_blank" rel="noopener noreferrer" small class="chip">BS, Computer Game Design</v-chip>
-              <v-chip href="https://dsu.edu/programs/mathematics-applied-minor.html" target="_blank" rel="noopener noreferrer" small class="chip">Minor, Applied Mathematics</v-chip>
-              <v-chip href="https://dsu.edu/programs/computer-graphics-minor.html" target="_blank" rel="noopener noreferrer" small class="chip">Minor, Computer Graphics</v-chip>
+              <v-chip
+                href="https://dsu.edu/programs/mscs/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                small
+                class="chip"
+              >
+                MS, Computer Science
+              </v-chip>
+              <v-chip
+                href="https://dsu.edu/programs/computer-science-bs.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                small
+                class="chip"
+              >
+                BS, Computer Science
+              </v-chip>
+              <v-chip
+                href="https://dsu.edu/programs/computer-game-design-bs.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                small
+                class="chip"
+              >
+                BS, Computer Game Design
+              </v-chip>
+              <v-chip
+                href="https://dsu.edu/programs/mathematics-applied-minor.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                small
+                class="chip"
+              >
+                Minor, Applied Mathematics
+              </v-chip>
+              <v-chip
+                href="https://dsu.edu/programs/computer-graphics-minor.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                small
+                class="chip"
+              >
+                Minor, Computer Graphics
+              </v-chip>
             </div>
           </v-card-text>
         </v-card>
@@ -77,7 +119,10 @@
       </v-card-title>
       <v-divider class="divider-tight" />
       <v-row class="work-row">
-        <v-col class="d-flex flex-column justify-start work-col" cols="auto">
+        <v-col
+          class="d-flex flex-column justify-start work-col"
+          cols="auto"
+        >
           <v-card-text>
             <h2>Spliced Inc.</h2>
             <h3><i>Build Engineer<span class="work-date">Jan 2025 - Mar 2026</span></i></h3>
@@ -91,7 +136,10 @@
           </v-card-text>
         </v-col>
 
-        <v-col class="d-flex flex-column justify-start work-col" cols="auto">
+        <v-col
+          class="d-flex flex-column justify-start work-col"
+          cols="auto"
+        >
           <v-card-text>
             <h2>Deck Nine Games</h2>
             <h3><i>Build Engineer<span class="work-date">Dec 2022 - Dec 2024</span></i></h3>
@@ -104,7 +152,10 @@
           </v-card-text>
         </v-col>
 
-        <v-col class="d-flex flex-column justify-start work-col" cols="auto">
+        <v-col
+          class="d-flex flex-column justify-start work-col"
+          cols="auto"
+        >
           <v-card-text>
             <h2>USGS Water Mission Area</h2>
             <h3><i>Enterprise Software Developer<span class="work-date">Aug 2020 - Nov 2022</span></i></h3>
@@ -116,7 +167,10 @@
           </v-card-text>
         </v-col>
 
-        <v-col class="d-flex flex-column justify-start work-col" cols="auto">
+        <v-col
+          class="d-flex flex-column justify-start work-col"
+          cols="auto"
+        >
           <v-card-text>
             <h2>Oak Ridge National Laboratory</h2>
             <h3><i>Programming Intern<span class="work-date">May 2017 - Aug 2017</span></i></h3>
@@ -127,7 +181,10 @@
           </v-card-text>
         </v-col>
 
-        <v-col class="d-flex flex-column justify-start work-col" cols="auto">
+        <v-col
+          class="d-flex flex-column justify-start work-col"
+          cols="auto"
+        >
           <v-card-text>
             <h2>Self-Employed</h2>
             <h3><i>Freelance Programming &amp; Game Design<span class="work-date">Jun 2015 - Aug 2020</span></i></h3>
