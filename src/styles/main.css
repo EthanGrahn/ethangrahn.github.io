@@ -1,0 +1,97 @@
+@import '@fontsource-variable/inter';
+
+:root {
+  --color-primary:      #1976D2;  /* brand blue */
+  --color-primary-dark: #1565C0;  /* hover states */
+  --color-primary-tint: #E8F1FB;  /* soft blue surfaces: tags, timeline accents */
+  --color-bg:           #FAFAF7;  /* off-white page background */
+  --color-surface:      #FFFFFF;  /* cards / raised surfaces */
+  --color-text:         #1F2328;  /* near-black body text */
+  --color-text-muted:   #57606A;  /* dates, secondary labels */
+  --color-border:       #E2E5E9;  /* hairline borders */
+  --radius:             8px;
+  --shadow-soft:        0 1px 3px rgba(31, 35, 40, 0.08);
+  --content-max-width:  960px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+small {
+  font-size: 0.85rem;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  padding: 20px 24px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  background: var(--color-primary-tint);
+  color: var(--color-primary-dark);
+  font-size: 0.85rem;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+a.tag:hover {
+  background: #DCEAF9;
+  text-decoration: none;
+}
