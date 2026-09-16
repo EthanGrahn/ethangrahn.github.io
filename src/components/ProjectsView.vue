@@ -103,7 +103,18 @@ const projects = [
     fullDescription: 'After the announcement that W4 Build would become open source, I set a goal for myself to get it set up and self-hosted in my homelab. I was able to convert the existing Docker Compose setup to k8s resources and have that synced via ArgoCD onto my hardware. Through that process I was able to contribute back bugs fixes, documentation improvements, and features to simplify the initial setup for new users. With a complete setup, I was able to utilize the system to build custom export templates for the JCHNC Survival Game project that I was working on.',
     thumbnail: 'https://gitlab.com/uploads/-/system/group/avatar/13999501/W4_ICON_SHADES.png?width=128',
     links: [
-      { label: 'W4 Build - Fork', url: 'https://gitlab.com/EthanGrahn/w4build', icon: ['fab', 'gitlab'] },
+      { label: 'W4 Build Containers', url: 'https://gitlab.com/EthanGrahn/w4build-containers', icon: ['fab', 'gitlab'] },
+      { label: 'W4 Build k8s', url: 'https://gitlab.com/EthanGrahn/w4-build-k8s', icon: ['fab', 'gitlab'] },
+      { label: 'W4 Build Ansible', url: 'https://gitlab.com/EthanGrahn/w4-build-ansible', icon: ['fab', 'gitlab'] },
+    ],
+  },
+  {
+    name: 'Meeple Center Website',
+    shortDescription: 'A website for a board gaming nonprofit.',
+    fullDescription: 'I developed this website and set up cost-free hosting for a board gaming nonprofit.',
+    thumbnail: 'https://www.meeplecenter.org/assets/MeepleCenter_Logo.svg',
+    links: [
+      { label: 'Website', url: 'https://www.meeplecenter.org', icon: ['fas', 'globe'] },
     ],
   },
   {

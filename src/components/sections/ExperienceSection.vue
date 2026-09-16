@@ -42,6 +42,12 @@
 <script setup>
 const experience = [
   {
+    company: 'Hormel Foods',
+    role: 'Data Platform Engineer II',
+    dates: 'Sep 2026 - Present',
+    bullets: [],
+  },
+  {
     company: 'Spliced Inc.',
     role: 'Build Engineer',
     dates: 'Jan 2025 - Mar 2026',

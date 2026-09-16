@@ -4,8 +4,8 @@
       About
     </h2>
     <p class="bio">
-      I am a software engineer focused on developer experience/tooling, DevOps, infrastructure, and backend development.
-      Most recently, I worked at Spliced Inc. and Deck Nine Games as a Build Engineer, where I expanded and maintained build automation systems.
+      I am a software engineer focused on DevOps, Infrastructure, and Platform engineering.
+      My current position is a Data Platform Engineer II at Hormel Foods. Previously, I worked at Spliced Inc. and Deck Nine Games as a Build Engineer, where I expanded and maintained build automation systems.
       I have experience maintaining cloud infrastructure on AWS and GCP; developing CI/CD pipelines with GitLab, GitHub, Jenkins, and Horde; building APIs with Java, Python, and C#; and other related skills.
     </p>
     <div class="contact-list">
